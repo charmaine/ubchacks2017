@@ -257,7 +257,7 @@ a:hover, a:focus {
 }
 
 header {
-  background: linear-gradient(#9591B4,transparent),url(../img/blank_laptop.png) no-repeat top;
+  background: linear-gradient(#ffc0cb 5%,transparent),url(../img/blank_laptop.png) no-repeat top;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
