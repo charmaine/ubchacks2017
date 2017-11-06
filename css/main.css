@@ -14,6 +14,7 @@ h1 {
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 0px;
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
@@ -22,6 +23,7 @@ h2 {
   etter-spacing: -0.5px;
   color: #ffffff;
   font-weight: 700;
+  font-family: 'Oswald', sans-serif;
 }
 
 h3 {
@@ -255,7 +257,7 @@ a:hover, a:focus {
 }
 
 header {
-  background: linear-gradient(#B993D6 , #8CA6DB 30%,transparent),url(../img/blank_laptop.png) no-repeat top;
+  background: linear-gradient(#9591B4,transparent),url(../img/blank_laptop.png) no-repeat top;
   width: 100%;
   padding: 20px 10px 60px 10px;
   height: 100vh;
@@ -401,7 +403,7 @@ footer {
   }
 
   .header-info {
-    padding-top: 30%;
+    padding-top: 40%;
   }
 }
 
