@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <!--
-
-       _        \                   __  __        ___  ____   .     .
-    ___/   ___  |   ,   ___    ___  |   |       .'   \ /   \  /     /
-   /   | .'   ` |  /  .'   `  /   ` |___|       |      |,_-<  |     |
-  ,'   | |----' |-<   |      |    | |   |       |      |    ` |     |
-  `___,' `.___, /  \_  `._.' `.__/| /   /        `.__, `----'  `._.'
-                 `
+   __  ______  ______   __  __           __
+  / / / / __ )/ ____/  / / / /___ ______/ /_______
+ / / / / __  / /      / /_/ / __ `/ ___/ //_/ ___/
+/ /_/ / /_/ / /___   / __  / /_/ / /__/ ,< (__  )
+\____/_____/\____/  /_/ /_/\__,_/\___/_/|_/____/
 -->
 
 <html lang="en"><head>
@@ -22,7 +20,7 @@
   <meta property="og:url" content="http://ubchacks.com/">
   <meta property="og:site_name" content="UBC Hacks">
   <meta property="og:description" content="Hackathon at The University of British Columbia with the mission to build an inclusive tech community.">
-  <meta property="og:image" content="http://ubchacks.com/img/header-bg.png">     
+  <meta property="og:image" content="http://ubchacks.com/img/ubchacks.png">
 
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
@@ -33,6 +31,14 @@
 
   <script src="js/modernizr-2.7.1.js"></script>
 
+  <style>
+      @font-face { font-family: bebas; src: url('BEBAS.TTF'); }
+       h1, h2 {
+         font-family: bebas;
+         font-weight: normal;
+         word-spacing: 15px;
+      }
+  </style>
 </head>
 
 <body>
@@ -47,8 +53,10 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about" class="scroll">About</a></li>
           <li><a href="#">Home</a></li>
+          <li><a href="#about" class="scroll">About</a></li>
+          <li><a href="#faq" class="scroll">FAQs</a></li>
+          <li><a href="#sponsors" class="scroll">Sponsors</a></li>
         </ul>
       </div>
     </div>
@@ -57,16 +65,15 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-xs-6">
+        <!-- <div class="col-xs-6">
           <a href="index.html"><img src="img/logo.png" alt="Logo" style="width:70px;height:42px;"></a>
         </div>
         <div class="col-xs-6 signin text-right navbar-nav">
           <a href="#about" class="scroll">About</a>&nbsp; &nbsp;<a href="#">Home</a>
-        </div>
+        </div> -->
       </div>
       <div class="row header-info">
         <div class="col-sm-10 col-sm-offset-1 text-center">
-
           <h1 class="wow fadeIn">UBC HACKS</h1>
           <br />
           <p class="lead wow fadeIn" data-wow-delay="0.5s">Dec 2, 2017.<br>DMP 110. 9AM-9PM.</p>
@@ -78,7 +85,7 @@
                   <a href="#about" class="btn btn-secondary btn-lg scroll">Learn More</a>
                 </div>
                 <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1.4s">
-                  <a href="#invite" class="btn btn-primary btn-lg scroll">Get Notified</a>
+                  <a href="https://hackday.mlh.io/ubchacks" class="btn btn-primary btn-lg scroll">Register</a>
                 </div>
               </div>
             </div>
@@ -106,137 +113,275 @@
           <img src="img/code.svg" style = "width:20%">
           <hr  class="line blue">
           <h3>Build</h3>
-          <p>Build a project alone or with teammates. Build that thing you've always wanted to build! Feel free to <audio id="audio" src="https://drive.google.com/uc?export=download&id=0B6Z6bBRO-T1ydUJOc1NnS3hmb3M" autostart="false" ></audio><a onclick="playSound()"> <b>work</b></a>
-on anything you're interested in.</p>
-        </div>
-        <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s" style="visibility: visible;text-align: center;">
-          <img src="img/share.svg" style = "width:20%">
-          <hr  class="line yellow">
-          <h3>Share</h3>
-          <p>Share your ideas and knowledge! But most importantly, share hackathon moments and memories that will last a lifetime.</p>
+          <p>Build your passion project while contributing to building an inclusive, diverse and accessible local tech community. Feel free to <audio id="audio" src="https://drive.google.com/uc?export=download&id=0B6Z6bBRO-T1ydUJOc1NnS3hmb3M" autostart="false" ></audio><a onclick="playSound()"> <b>work</b></a>
+            on anything you're interested in!</p>
+          </div>
+          <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s" style="visibility: visible;text-align: center;">
+            <img src="img/share.svg" style = "width:20%">
+            <hr  class="line yellow">
+            <h3>Share</h3>
+            <p>Share your ideas and knowledge! But most importantly, share hackathon moments and memories that will last a lifetime.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <section id="invite" class="pad-lg light-gray-bg">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
-          <i class="fa fa-envelope-o margin-40"></i>
-          <h2 class="black">Stay In Touch</h2>
-          <br />
-          <p class="black">Sign up to get notified when registration opens.</p>
-          <br />
+    <section id="faq" class="pad-sm light-gray-bg">
+      <h2 class="black" style="text-align:center">Frequently Asked Questions</h2> <br><br>
+      <div class="container">
+        <div class=" wow fadeInLeft" data-wow-delay="0.8s">
           <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-              <form role="form">
-                <a class="btn btn-primary btn-lg" href="http://eepurl.com/cYlcFD">I'm in!</a>
-              </form>
+            <!-- FAQ COLLAPSIBLE PANELS! -->
+            <div class="col-md-6">
+
+              <!-- FAQ 1 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-pink">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse1">
+                      <h3 class="service-heading text-center">What is Local Hack Day?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      A local hack day is a beginners friendly hackathon that brings students together to build cool tech-related projects over 12 hours.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-white">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse2">
+                      <h3 class="service-heading text-center">How much does it cost?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Nothing. Attending UBC's Local Hack Day is completely free! We'll even load you up with swag, food and great prizes in the end!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-blue">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse3">
+                      <h3 class="service-heading text-center">Who can participate in this hackathon?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      We welcome all University / College students! All participants must follow the <a class="in-text" target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-white">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse4">
+                      <h3 class="service-heading text-center">How do I get to the event?</h3>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      We do not offer travel reimbursements at the moment, but we will take good care of you if you can make your way here!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-pink">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse5">
+
+                      <h3 class="service-heading text-center">Where is the event?</h3>
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse5" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      UBC Hacks 2017 will be held in <a class="in-text" target="_blank" href="https://www.google.ca/maps/place/Hugh+Dempster+Pavilion,+6245+Agronomy+Rd,+Vancouver,+BC+V6T+1Z4/data=!4m2!3m1!1s0x548672cbd82e5c6d:0x513dd2aa8d9fe76?sa=X&ved=0ahUKEwjIitfDpqjXAhVDwGMKHQzwAhUQ8gEIMDAB">Hugh Dempster Pavilion</a> (DMP 110)
+                      at the University of British Columbia, Vancouver on December 2nd, 2017.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- FAQ 6 -->
+            <div class="col-md-6">
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-white">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse6">
+                      <h3 class="service-heading text-center">What if I've never been to a hackathon before?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse6" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Don't worry! Having programming experience is not a requirement for this event. We will have workshops and mentors readily available to help students of all technical skill levels to kickstart their project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 7 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-blue">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse7">
+                      <h3 class="service-heading text-center">How do teams work?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse7" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Feel free to hack solo or in up to teams of 4. (You can hack in more than teams of 4. But if you win, the prizes are only meant to be for up to 4 students, so you will have to divide them up accordingly on your own)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 8 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-white">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse8">
+                      <h3 class="service-heading text-center">Will there be prizes?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse8" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Yes. More information on prizes will be posted closer to the event. These prizes are only meant to be incentives for students to share their projects. Remember, this is meant to be a fun and friendly event before it is a competition!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 9 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-pink">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse9">
+                      <h3 class="service-heading text-center">What should I bring?</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse9" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      You must bring a valid student or government issued ID card for check ins.
+                      Also, bring your laptop, charging cables, any hardware that you plan to hack with (if any), and we will provide the rest!
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 10 -->
+              <div class="panel panel-default">
+                <div class="panel-heading panel-heading-white">
+                  <h4 class="panel-title">
+                    <a class="faq-panel" data-toggle="collapse" href="#collapse10">
+                      <h3 class="service-heading text-center">I have more questions!</h3>
+                    </a>
+                  </h4>
+                </div>
+
+                <div id="collapse10" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>
+                      Feel free to shoot us an email <a href="mailto:hello@ubchacks.com">here</a>!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-
-  <section id="sponsors">
-    <h2 class="black" style="text-align:center">2017 Sponsors</h2> <br><br>
-    <div class="container">
-      <div class=" wow fadeInLeft" data-wow-delay="0.8s">
-        <a href="https://mlh.io">
-          <img src="img/mlh.png" alt="Tech Crunch">
-        </a>
-        <a href="https://github.com">
-          <img src="img/github.png" alt="Github">
-        </a>
-        <a href="https://cs.ubc.ca">
-          <img src="img/cs.png" alt = "UBC Computer Science">
-        </a>
-        <br>
-        <a href="https://stickergiant.com">
-          <img src="img/stickergiant.png" alt="Stickergiant">
-        </a>
-        <a href="https://jetbrains.com">
-          <img src="img/jetbrains.png" alt="Jetbrains">
-        </a>
-        <a href="https://get.tech">
-          <img src="img/dot_tech.png" alt=".Tech">
-        </a>
-        <a href="https://www.sketchapp.com">
-          <img src="img/sketch.png" alt="Sketch">
-        </a>
-    </div>
-  </section>
-
-<!--
-<a href="https://mlh.io">
-          <div class="col-sm-2"><img src="img/mlh.png" alt="Tech Crunch" style = "height:200px; width: auto; display: block; overflow:hidden;padding-bottom:30px;"></div>
-        </a>
-        <a href="https://github.com">
-          <div class="col-sm-2"><img src="img/github.png" alt="GitHub" style = "width:120%; height:auto; display: block; overflow:hidden;padding-bottom:30px;"></div>
-         </a>
-         <a href="https://stickergiant.com">
-          <div class="col-sm-2"><img src="img/stickergiant.png" alt="Sticker Giant" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px; display: block; "></div>
-          </div>
-        </a>
-        <a href="https://jetbrains.com">
-          <div class="col-sm-2"><img src="img/jetbrains.png" alt="Jet Brains" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px; display: block; "></div>
-          </div>
-        </a>
--->
-
-<!--
-  <section id="sponsors">
-    <h2 class="black" style="text-align:center">Past Sponsors</h2> <br><br>
-    <div class="container">
-      <div class=" wow fadeInLeft" data-wow-delay="0.8s">
-        <div class="col-sm-2"><img src="img/mlh.png" alt="Tech Crunch" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/github.png" alt="GitHub" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/microsoft.png" alt="Microsoft" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/aws.png" alt="AWS" style = "width:100%; height:auto; overflow:hidden;padding-bottom:20px; filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/salesforce.png" alt="Salesforce" style = "width:90%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/thisopenspace.jpg" alt="This Open Space" style = "width:80%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/hackharassment.png" alt="Hack Harassment" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/cvr.png" alt="CVR" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/stickergiant.png" alt="Sticker Giant" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/soylent.svg" alt="Soylent" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/agda.png" alt="AGDA" style = "width:80%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/cs.png" alt="CS" style = "width:70%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/dunbar.png" alt="Dunbar Pizza" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/domain.jpg" alt="Domain.com" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/lighthouse.png" alt="Lighthouse Labs" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/mobify.png" alt="Mobify" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/archiact.png" alt="Archiact" style = "width:80%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-        <div class="col-sm-2"><img src="img/clarifai.png" alt="Clarifai" style = "width:100%; height:auto; overflow:hidden;padding-bottom:30px;filter: grayscale(100%);"></div>
-      </div>
-    </div>
-  </section>
--->
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 margin-20">
-          <ul class="list-inline social">
-            <li><a href="mailto:hello@ubchacks.com"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="https://twitter.com/ubchacks"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://www.facebook.com/ubchacks/"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/ubchacks/"><i class="fa fa-instagram"></i></a></li>
-          </ul>
+    <section id="sponsors">
+      <h2 class="black" style="text-align:center">2017 Sponsors</h2> <br><br>
+      <div class="container">
+        <div class=" wow fadeInLeft" data-wow-delay="0.8s">
+          <a href="https://mlh.io">
+            <img src="img/mlh.png" alt="Tech Crunch">
+          </a>
+          <a href="https://github.com">
+            <img src="img/github.png" alt="Github">
+          </a>
+          <a href="https://cs.ubc.ca">
+            <img src="img/cs.png" alt = "UBC Computer Science">
+          </a>
+          <br>
+          <a href="https://stickergiant.com">
+            <img src="img/stickergiant.png" alt="Stickergiant">
+          </a>
+          <a href="https://jetbrains.com">
+            <img src="img/jetbrains.png" alt="Jetbrains">
+          </a>
+          <a href="https://get.tech">
+            <img src="img/dot_tech.png" alt=".Tech">
+          </a>
+          <a href="https://www.sketchapp.com">
+            <img src="img/sketch.png" alt="Sketch">
+          </a>
         </div>
-        <div class="col-sm-4 text-right">
-          <p><small>UBC Hacks 2017
-          </div>
-        </div>
-      </div>
-    </footer>
+      </section>
 
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 margin-20">
+              <ul class="list-inline social">
+                <li><a href="mailto:hello@ubchacks.com"><i class="fa fa-envelope"></i></a></li>
+                <li><a href="https://twitter.com/ubchacks"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/ubchacks/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ubchacks/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 text-right">
+              <p><small>UBC Hacks 2017
+              </div>
+            </div>
+        </div>
+      </footer>
+
+  <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
