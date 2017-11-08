@@ -264,7 +264,8 @@ header {
   background: linear-gradient(#ffc0cb, transparent), url(../img/bg.png) top no-repeat fixed;
   width: 100%;
   padding: 20px 10px 60px 10px;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 200px;
   overflow: hidden;
   background-size: cover;
   -webkit-background-size: cover;
@@ -449,7 +450,6 @@ footer {
 
 
 div.col-sm-8.col-sm-offset-2.text-center{
-  /*padding-right: 30px;*/
 }
 
 .row{
